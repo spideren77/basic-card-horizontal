@@ -8,20 +8,21 @@
 
 body {
     background-image: url('business-card-background.png');
-    background-repeat: repeat;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1600px 905px;
 
     /* overflow: hidden; */
 }
 /* the main card container */
 
 .card{
-  background-image: url('business-card-skeleton.png');
+  background-image: url('businesscardskeletontitle.png');
   margin: 0 auto;
   width:600px;
   height:1050px;
   box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(0, 0, 0);
   border-radius: 30px;
 }
 
@@ -100,5 +101,12 @@ a:hover {
     font-size:17px;
     top: 60px;
   }
-  }
-  
+}
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-gap:10px;
+    grid-row-gap: 100px;
+    }
